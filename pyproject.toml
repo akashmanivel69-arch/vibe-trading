@@ -227,3 +227,6 @@ ignore = ["E501"]
 # to match research-paper formulas. F401 (unused-import) is noise here;
 # F841 (unused-local-variable) stays active to catch real formula bugs.
 "agent/src/factors/zoo/**/*.py" = ["F401"]
+
+[tool.vercel]
+entrypoint = "agent.api_server:app"
